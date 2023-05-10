@@ -1,25 +1,90 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React, {useState} from "react"; 
+import Form1 from "./Components/Form1";
+
+
+
+
+const App = () => {
+      
+  let [name, setName] = useState("")
+
+
+
+  return(
+      <div>
+           <Form1  updateName={setName}/>
+           <p>{name}</p>
+      </div>
+  )
+
+
 }
 
+
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React,{useState} from "react"; 
+// import Counter from "./Components/Counter";
+// import Form from "./Components/Form";
+
+// // console.log("Before App.js")
+// // let a = 10
+
+
+// const App = () => {
+//     // let [coins, setCoins] = useState(100) // coins = 100 // state varibale
+
+//     // helping you to change the state variable (reloading the componet, not reassiging the value again and again)
+    
+    
+//     //  console.log("inside App.js")
+   
+
+//     // function increaseA(){
+//     //      a++
+//     //      console.log(a)
+//     // }
+
+//     // function increaseCoins(){
+//     //     setCoins(coins+1)
+//     // }
+
+//   return(
+//       <div>
+//            {/* <h1>{a}</h1>
+//           <button onClick={increaseA}> Change X</button>
+//            <h1>{coins}</h1>
+//           <button onClick={increaseCoins}> Change X</button> */}
+//             {/* <Counter/> */}
+//             <Form  x="hello"/>
+//       </div>
+//   )
+// }
+
+// export default App;
+
+
+
