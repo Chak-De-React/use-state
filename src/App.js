@@ -1,20 +1,22 @@
 
 import React, {useState} from "react"; 
 import Form1 from "./Components/Form1";
+import Counter1 from "./Components/Counter2";
 
 
 
 
 const App = () => {
       
-  let [name, setName] = useState("")
+  // let [name, setName] = useState("")
 
 
 
   return(
       <div>
-           <Form1  updateName={setName}/>
-           <p>{name}</p>
+           {/* <Form1  updateName={setName}/>
+           <p>{name}</p> */}
+            <Counter1 />
       </div>
   )
 
