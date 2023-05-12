@@ -1,7 +1,9 @@
 
 import React, {useState} from "react"; 
 import Form1 from "./Components/Form1";
+import Count from "./Components/Count";
 import Counter1 from "./Components/Counter2";
+import Count2 from "./Components/Count2";
 
 
 
@@ -16,7 +18,8 @@ const App = () => {
       <div>
            {/* <Form1  updateName={setName}/>
            <p>{name}</p> */}
-            <Counter1 />
+            {/* <Counter1 /> */}
+            <Count2 />
       </div>
   )
 
